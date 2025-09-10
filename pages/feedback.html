@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- TODO include comment-->
+<html >
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Feedback</title>
+        <meta name="description" content="Contact Us!">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/general.css">
+        <link rel="stylesheet" href="/css/form.css">
+        <link rel="stylesheet" href="/css/articlegeneral.css">
+    </head>
+    <body >
+        <nav>
+            <header>
+                <a href="/index.html"><img src="/images/logo.png" alt="fake logo" class="logo"/></a>
+                <ul class="navBar">
+                    <section class="dropDown">
+                    <li class="dropHeader">Pages</li>
+                        <ul class="dropContent">
+                            <li><a href="/pages/articles/about.html">About Me</a></li>
+                            <li><a href="/index.html">Languages</a></li>
+                            <li class="content"><a href="/pages/feedback.html">Contact</a></li>
+                        </ul>
+                    </section>
+                  </ul> 
+            </header>
+        </nav>
+        <section class="topPart">
+         
+            <h1>Contact Me</h1>
+        </section>
+        <main class="back">
+            <form>
+                <fieldset>
+                    <label for="subject">Please enter the subject</label>
+                    <input type="text" id="subject" name="subject" maxlength="20" required></input>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" required placeholder="johndoe@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></input>
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></input>
+                </fieldset>
+
+                <fieldset>
+                    <label for="student">
+                    <input type="radio" id="student" name="student" class="inline">Are you a student?</label></input>
+                    <label for="ordered">
+                    <input type="radio" id="ordered" name="ordered" class="inline">Have you ordered before?</label></input>
+                    <label for="terms">
+                    <input type="checkbox" id="terms" name="terms" class="inline">Have you read and acknoledged our lack of terms and conditions?</label></input>
+                    <label for="privacy">
+                    <input type="checkbox" id="privacy" name="privacy" class="inline" >Do you agree to our lack of a privacy policy?</label></input>
+                    <lable for="date">Date</lable>
+                    <input type="date" id="date" name="date"></input>
+                </fieldset>
+
+                <fieldset>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required>Enter your message here</textarea>
+                    <input type="reset"></input>
+                    <input type="submit"></input>
+                </fieldset>
+
+            </form>
+        </main>
+        <footer>
+            <p> © 2023 Ezzidean Azzabi </p>
+        </footer>
+
+
+
